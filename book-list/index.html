@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Band Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>            
+            <h1>JS Band Story\Your Full Name</h1>
+            <nav>
+                <img src="cart.svg" alt="Shopping cart" class="shopcart">
+                <button type="submit" class="singout">Sing-Out</button> 
+                <img src="avatar.png" alt="Avatar" class="miniavatar">             
+                <p class="user">Test User</p>
+            </nav>            
+        </header>
+        <main>
+            <section class="sort">
+                <form method="post" action="sort.php">
+                    <input type="text" id="search" name="search" placeholder="Search..">
+                    <select id="sort" name="sortby">
+                        <option value="price" selected>Default</option>
+                        <option value="price">Price (by Increase)</option>
+                        <option value="price">Price (by Decrease)</option>
+                        <option value="ca">Name (A-Z)</option>
+                        <option value="usa">Name (Z-A)</option>
+                    </select>
+                </form>
+            </section>
+            <section class="listbook">
+
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="book.jpg">
+                        <img src="bookcover.jpg" alt="Forest" width="200" height="293">
+                      </a>
+                      <div class="desc">
+                        <h3>The Hero of This Book</h3>
+                        <p class="author">Elizabeth McCracken</p>
+                        <div class="pricebook">
+                          <div class="pbook"><b>Price:</b> $52.72</div>
+                          <div class="vbook"><button type="submit" id="view">View</button></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="book.jpg">
+                        <img src="bookcover.jpg" alt="Forest" width="200" height="293">
+                      </a>
+                      <div class="desc">
+                        <h3>The Hero of This Book</h3>
+                        <p class="author">Elizabeth McCracken</p>
+                        <div class="pricebook">
+                          <div class="pbook"><b>Price:</b> $52.72</div>
+                          <div class="vbook"><button type="submit" id="view">View</button></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="book.jpg">
+                        <img src="bookcover.jpg" alt="Forest" width="200" height="293">
+                      </a>
+                      <div class="desc">
+                        <h3>The Hero of This Book</h3>
+                        <p class="author">Elizabeth McCracken</p>
+                        <div class="pricebook">
+                          <div class="pbook"><b>Price:</b> $52.72</div>
+                          <div class="vbook"><button type="submit" id="view">View</button></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="book.jpg">
+                        <img src="bookcover.jpg" alt="Forest" width="200" height="200">
+                      </a>
+                      <div class="desc">
+                        <h3>The Hero of This Book</h3>
+                        <p class="author">Elizabeth McCracken</p>
+                        <div class="pricebook">
+                          <div class="pbook"><b>Price:</b> $52.72</div>
+                          <div class="vbook"><button type="submit" id="view">View</button></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </section>
+        </main>
+        <footer>Виконано в <a href="https://prometheus.org.ua/" >Prometheus</a> © 2022</footer>
+        <script src="main.js"></script>
+    </body>
+</html>

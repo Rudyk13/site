@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Band Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>            
+            <h1>JS Band Story\Your Full Name</h1>
+            <nav>
+                <img src="cart.svg" alt="Shopping cart" class="shopcart">
+                <button type="submit" class="singout">Sing-Out</button> 
+                <img src="avatar.png" alt="Avatar" class="miniavatar">             
+                <p class="user">Test User</p>
+            </nav>            
+        </header>
+        <main>
+            <section class="row">
+                <div class="column left">
+                    <figure>
+                        <img src="book.jpg" width="100" height="147" alt="The Hero of This Book" class=scaled>                        
+                    </figure> 
+                    <p class="caption">A book providing an introduction to the Java Script language and programming in general.</p>                   
+                </div>
+                <div class="column middle">
+                    <h2>The Hero of This Book</h2>
+                    <dl class="aboutbook">
+                        <dt>Book author:</dt>
+                          <dd>Elizabeth McCracken</dd>
+                        <dt>Book level:</dt>
+                          <dd>Beginner</dd>
+                        <dt>Book tags:</dt>
+                          <dd>core</dd>
+                    </dl>                    
+                </div>
+                <div class="column right">
+                    <div class="price">
+                        <form method="post" action="add_to_cart.php">
+                            <dl>
+                                <dt>Price:</dt>
+                                <dd>$<input type="text" id="oneprice" value="52.72" class="oneprice" readonly></dd>
+                                <dt>Count</dt>
+                                <dd><input type="number" id="count" value="1" max="42" min="1"></dd>
+                                <dt>Total price:</dt>
+                                <dd>$<input type="text" id="totalprice" value="52.72" class="totalprice" readonly></dd>
+                            </dl>                    
+                            <p style="text-align: right; margin: 0; padding: 0;"><button type="submit" class="tocart">Add to cart</button></p>
+                        </form>
+                    </div>
+                </div>   
+            </section>
+        </main>
+        <footer></footer>
+        <script src="main.js"></script>
+    </body>
+</html>

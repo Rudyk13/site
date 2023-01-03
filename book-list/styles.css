@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,700&display=swap');
+html {
+    font-size: 100%;
+    color: #3b6a83;
+}
+body {
+    font-size:14px;
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    min-height: 100%;
+    background: #9ab6c5;
+}
+header {
+    background: #c0d2dc;
+    border-top: solid 1px #3b6a83;
+    border-bottom: solid 1px #3b6a83;
+    margin-top: 5px;
+}
+h1 {
+  font-size: 20px;    
+  padding: 5px;
+  margin: 15px 0;
+}
+h2 {
+  font-size: 20px;
+  color: #444;
+}
+h3 {
+  font-size: 18px;
+  color: #444;
+  margin-top: 0;
+}
+.title {  
+  padding: 5px;
+  margin: 15px 0;
+}
+nav {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  max-width: 50%;
+  height: 60px;
+  vertical-align: top;
+  display: inline-block;
+}
+img.shopcart {
+  width: 34px;
+  height: 34px;
+  margin-right:10px;
+}
+img.miniavatar {
+  width: 34px;
+  height: 34px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+img.shopcart, img.miniavatar, p.user {
+  vertical-align:middle;
+  display:inline-block;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+  padding: 20px;
+}
+.listbook {
+  margin: 10px;
+}
+img.scaled {
+  width: 200px;
+  height: auto;
+}
+dl.aboutbook dt {
+  width: 100px;
+  float: left; /* Выстраиваем по горизонтали */
+  text-align: left; /* Выравниваем вправо */
+  font-size: 16px;
+  font-weight: bold;
+}
+dl.aboutbook dd {
+  font-size: 16px;
+  margin-left: 70px; /* Отступ слева */
+  margin-bottom: 10px; /* Расстояние между терминами */
+}
+.price {
+  width: 96%;
+  border: dashed 2px #c0d2dc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.price dt {
+  width: 95px;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price dd {  
+  color: azure;
+  font-size: 16px;
+  text-align: right;
+  margin-left: 60px;
+  margin-bottom: 7px;
+}
+input[type=number] {
+    width: 60px;
+    padding: 5px 5px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-align: right;
+}
+input.oneprice {
+  border: 0;
+  background-color: unset;
+  color: azure;
+  font-weight: bold;
+  width: 40px;
+  outline:none;
+}
+input.totalprice {
+  border: 0;
+  background-color: unset;
+  color: azure;
+  font-weight: bold;
+  width: 40px;
+  outline:none;
+}
+select#sort {
+    width: 30%;
+    padding: 10px 15px;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+  input#search {
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    background-image: url('searchicon.png');
+    background-position: 170px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px;
+}
+button.singout {
+  width: 100px;
+  background-color: #3b6a83;
+  color: white;
+  padding: 5px 7px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  }
+button.tocart {
+  width: 100px;
+  background-color: #3b6a83;
+  color: white;
+  padding: 7px 10px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}  
+div.gallery:hover {
+    border: 1px solid #777;
+}  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 5px;
+}
+.pricebook {
+  color: #244252;
+  display:flex;  
+  align-items: baseline;
+}
+.pbook {
+  -webkit-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  -o-flex: 3;
+  flex: 3;
+  vertical-align:middle;
+}
+.vbook {
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  -o-flex: 2;
+  flex: 2;
+  vertical-align:middle;
+}
+* {
+    box-sizing: border-box;
+}
+button#view {
+  background-color: #3b6a83;
+  color: white;
+  padding: 7px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+}  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+  }
+}  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 1px solid #3b6a83;
+  border-bottom: 1px solid #3b6a83;
+  background: #c0d2dc;
+}
